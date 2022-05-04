@@ -1,14 +1,41 @@
 .App {
   text-align: center;
-  background-color: rgb(24, 109, 220);
+  background: #8360c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2ebf91, #5b18d6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #059cbd, #5d16e1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   color:antiquewhite;
   min-height: 100vh;
   padding: 2em;
   
 }
 
+.userInput{
+  height: 2em;
+  margin: 0 1em;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.searchButton{
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  background-color: rgb(152, 253, 0);
+  color: rgb(75, 74, 74);
+  font-weight: 600;
+  border: none;
+  box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+
+}
 .placeName{
   color: yellow;
   font-size: 2em;
+  text-transform: capitalize;
 }
 

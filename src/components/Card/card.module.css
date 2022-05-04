@@ -4,8 +4,16 @@
     padding: 1em 0;
     border: 2px solid gray;
     border-radius: 10px;
-    background-color: rgb(206, 121, 9);
+    /* background-color: rgb(206, 121, 9); */
     color: white;
+    /* box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75); */
+background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+/* backdrop-filter: blur(50px); */
+/* -webkit-backdrop-filter: blur(2px); */
+border: 1px solid rgba(255, 255, 255, 0.3);
   
 }
 
@@ -18,15 +26,45 @@
 
 .cardWeatherInfo{
     margin: 1em;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
-.card h2, h3{
+.card h2{
     margin: 0;
+}
+
+.date{
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.forecast{
+    text-transform: capitalize;
 }
 
 .temperature{
     font-size: 2em;
     font-weight: 600;
+}
+
+.minmax{
+    font-size: 0.8em;
+    margin: 0em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.minmax p{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.icon{
+    max-width: 100%;
 }

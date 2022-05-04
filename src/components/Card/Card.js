@@ -14,12 +14,16 @@ function Card({ searchTerm, weather, place }) {
     <div className={css.card}>
       <div className={css.cardHeader}>
         <h2>{day}</h2>
-        <h3>{date}</h3>
+        <h3 className={css.date}>{date}</h3>
       </div>
-      <p>Forecast: {weather.weather[0].description}</p>
+      <p className={css.forecast}>{weather.weather[0].description}</p>
       <div className={css.cardWeatherInfo}>
-        <p className={css.temperature}>{Math.round(weather.temp.day)}C</p>
-        <img src={iconURL} alt="weatherIcon"></img>
+        <p className={css.temperature}>{Math.round(weather.temp.day)}°C</p>
+        <div className={css.minmax}>
+          <p>Max: {weather.temp.max}</p>
+          <p>Min: {weather.temp.min}</p>
+        </div>
+        <img src={iconURL} alt="weatherIcon" className={css.icon}></img>
       </div>
     </div>
   );
