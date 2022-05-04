@@ -1,0 +1,32 @@
+.card{
+    width: 80vw;
+    margin: 1em auto;
+    padding: 1em 0;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: rgb(206, 121, 9);
+    color: white;
+  
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    /* justify-items: baseline; */
+}
+
+.cardWeatherInfo{
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.card h2, h3{
+    margin: 0;
+}
+
+.temperature{
+    font-size: 2em;
+    font-weight: 600;
+}
