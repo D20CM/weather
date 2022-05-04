@@ -1,15 +1,33 @@
 .App {
   text-align: center;
-  background: #8360c3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2ebf91, #5b18d6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #059cbd, #5d16e1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: #8360c3;  fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #2ebf91, #5b18d6);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #059cbd, #5d16e1); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
   
   color:antiquewhite;
   min-height: 100vh;
   padding: 2em;
+
+  /*gradient animation*/
+  background: linear-gradient(86deg, #180a4e, #3718b1, #4056d8, #3a86bd, #24a1c4, #fafa02);
+  background-size: 400% 400%;
+  animation: gradient 40s ease infinite;
   
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 93% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .userInput{
   height: 2em;
   margin: 0 1em;
